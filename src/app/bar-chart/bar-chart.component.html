@@ -1,0 +1,11 @@
+<section class="bar-chart">
+    <ul class="bars" [ngClass]="orientation">
+        <li class="bar "
+            *ngFor="let bar of data"
+            [ngStyle]="{ 
+              'transform': getScale(bar.value),
+              'background': bar.color || 'tomato'
+            }">
+        </li>
+    </ul>
+</section>

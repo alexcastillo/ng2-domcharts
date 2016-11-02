@@ -1,0 +1,33 @@
+.bars {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bar {
+    flex: 1 1 auto;
+    transition: all 0.3s ease;
+}
+
+.bars.vertical {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.bars.vertical .bar {
+    height: 1vh;
+    transform-origin: bottom;
+}
+
+.bars.horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bars.horizontal .bar {
+    width: 1vw;
+    transform-origin: left;
+}
